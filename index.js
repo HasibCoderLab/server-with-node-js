@@ -1,10 +1,10 @@
 import http from "http"
 
-const server = http.createServer((req,res) =>{
-    res.end("This is Firs Server");
+const port  = 7000;
+const server = http.createServer((req, res) =>{
+res.end("This a  server");
 })
-
-server.listen(8000, () => {
-    console.log(`server started at ${8000}` );
+server.listen(port, ()=>{
+    console.log(`server is stated at ${port}`);
     
 })
